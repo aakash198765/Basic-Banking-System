@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <title>Home Page | Basic-Banking-System</title>
+  </head>
+  <body class="" style="background-image: url('image/bank.jpg'); height: auto;width: auto; overflow-x: hidden;">
+    <!---------NAVBAR START----------------->
+<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+  <div class="container-fluid">
+    <button class="navbar-toggler bg-success" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand text-white" href="#">SAHA BANK</a>
+    <div class="collapse navbar-collapse d-flex me-2" id="navbarTogglerDemo03">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item ">
+          <a class="nav-link active text-white" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">View All Customers</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+    <!------NAVBAR END---------------------->
+
+<!----Acount holder details start----->
+<div class="container-fluid">
+<h2 class="text-center text-white">Account Holder Details</h2>
+<h5 class="text-center text-white">Name: Aakash Kumar</h5>
+<h5 class="text-center text-white">E-mail: aka123@gmail.com</h5>
+<h5 class="text-center text-white">Amount: Rs. 10000000</h5>
+
+      <button type="button"  data-bs-toggle="modal" data-bs-target="#transfer" class="text-center btn btn-primary btn-sm mt-3 offset-5">Transfer Money</button>
+      <button type="button" data-bs-toggle="modal" data-bs-target="#Transaction"  class="text-center btn btn-primary btn-sm mt-3">View Transactions</button>
+</div>
+<!---Account Holder details end------->
+
+<!---All customers detail start---->
+
+<div class="container">
+  <div class="row"><!--all customers detail div start-->
+    <div class="col"><h1 class="text-center text-white">All Customers Detail</h1></div>
+  </div><!--ALL CUSTOMERS DETAIL DIV END--->
+  
+
+  <div class="row"><!---view all customers table div start--->
+    <div class="col">
+      <table class="table table-dark table-striped table-info">
+           <tr><th class="table-danger text-white">SI. No.</th><th class="table-danger text-white">Name</th><th class="table-danger text-white">Email</th><th class="table-danger text-white">Bank Balance (in Rs.)</th></tr>
+           <tr><td>1</td><td>Aarav</td><td>aakash12@gmail.com</td><td>50000</td></tr>
+           <tr><td>2</td><td>Aarav</td><td>aakash12@gmail.com</td><td>50000</td></tr>
+           <tr><td>3</td><td>Aarav</td><td>aakash12@gmail.com</td><td>50000</td></tr>
+           <tr><td>4</td><td>Aarav</td><td>aakash12@gmail.com</td><td>50000</td></tr>
+           <tr><td>5</td><td>Aarav</td><td>aakash12@gmail.com</td><td>50000</td></tr>
+           <tr><td>6</td><td>Aarav</td><td>aakash12@gmail.com</td><td>50000</td></tr>
+           <tr><td>7</td><td>Aarav</td><td>aakash12@gmail.com</td><td>50000</td></tr>
+           <tr><td>8</td><td>Aarav</td><td>aakash12@gmail.com</td><td>50000</td></tr>
+           <tr><td>9</td><td>Aarav</td><td>aakash12@gmail.com</td><td>50000</td></tr>
+           <tr><td>10</td><td>Aarav</td><td>aakash12@gmail.com</td><td>50000</td></tr>
+       </table>
+
+    </div>
+  </div><!---VIEW ALL CUSOTMERS TABLE DIV END---->
+</div>
+
+<!--All customers detail end----->
+
+<!----Modal Transfer start---->
+<div class="modal" id="transfer" tabindex="-1" aria-labelledby="myModalTransact" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Transaction via E-mail</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Recipient Name:</label>
+            <input type="text" class="form-control" id="email">
+          </div>
+          <div class="mb-3">
+            <label for="message-text" class="col-form-label">Recipient E-mail:</label>
+            <input class="form-control" type="text" id="name">
+          </div>
+          <div class="mb-3">
+            <label for="message-text" class="col-form-label">Amount:</label>
+            <input class="form-control" type="number" id="amount">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#">Transfer</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--- Modal Transfer End---->
+
+
+<!----Modal view transaction start---->
+<div class="modal" id="Transaction" tabindex="-1" aria-labelledby="myModalTransaction" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">View All Transactions</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <table class="table table-striped table-hover table-info">
+           <tr><th>Name</th><th>Email</th><th>Amount</th></tr>
+           <tr><td>akas</td><td>Ak</td><td>300</td></tr>
+           <tr><td>red</td><td>ok</td><td>200</td></tr>
+         </table>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--- Modal view transaction End---->
+
+<!---Modal successful transaction start------->
+<div class="modal" id="successful" tabindex="-1" aria-labelledby="myModalTransaction" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Thank You !!</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h2>Successful Transaction</h2>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!---Modal Successful transaction End--------->
+
+
+
+
+<!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
